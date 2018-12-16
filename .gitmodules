@@ -1,0 +1,6 @@
+[submodule "cmap-resources"]
+	path = cmap-resources
+	url = https://github.com/adobe-type-tools/cmap-resources
+[submodule "mapping-resources-pdf"]
+	path = mapping-resources-pdf
+	url = https://github.com/adobe-type-tools/mapping-resources-pdf
