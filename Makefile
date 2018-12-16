@@ -3,10 +3,10 @@ tgz = $(pkgname).tgz
 
 dist:
 	tar -czf $(tgz) \
-	  --exclude=.svn \
-	  --exclude=[Dd]eprecated \
-	  --transform="s,^,$(pkgname)/," \
+	  --exclude .svn \
+	  --exclude .git \
+	  --exclude [Dd]eprecated \
 	  README \
-	  -C $(ks)/adobe-type-tools cmap-resources mapping-resources-pdf
+	  cmap-resources mapping-resources-pdf
 	echo; ls -l $(tgz); echo
 	tar tf $(tgz) | sort; echo
